@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 六芒星（Hexagram / Star of David）SVG 文件
+     - 居中显示，由两个等边三角形（向上/向下）重合构成
+     - 使用 viewBox 使文件可缩放
+     - 可通过 stroke / fill 自定义样式
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" aria-label="六芒星">
+  <!-- 背景可选（注释掉以保持透明） -->
+  <!-- <rect width="100%" height="100%" fill="#fff"/> -->
+
+  <!-- 居中容器：以 100,100 为中心，半径 r 控制三角形大小 -->
+  <!-- 计算等边三角形顶点（指向上） -->
+  <!-- 上三角顶点： (100,100 - r) ; 左/右底点： 100 ± r*sin(60), 100 + r*cos(60) -->
+
+  <!-- 我们选择 r = 60，生成两个三角形的点 -->
+  <polygon points="100,40 52.0,130 148.0,130" fill="none" stroke="rgba(205, 0, 0, 1)" stroke-width="20" stroke-linejoin="round"/>
+  <polygon points="100,160 52.0,70 148.0,70" fill="none" stroke="rgba(57, 57, 57, 1)" stroke-width="20" stroke-linejoin="round"/>
+
+  <!-- 可选：统一颜色并加阴影/透明填充示例 -->
+  
+  <polygon points="100,40 52.0,130 148.0,130" fill="rgba(0,160,0,0.06)" stroke="rgba(112, 112, 112, 1)" stroke-width="3"/>
+  <polygon points="100,160 52.0,70 148.0,70" fill="rgba(0,96,255,0.06)" stroke="rgba(160, 5, 0, 1)" stroke-width="3"/>
+ 
+</svg>
