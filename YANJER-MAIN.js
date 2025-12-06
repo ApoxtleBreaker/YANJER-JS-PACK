@@ -160,6 +160,13 @@ rdm.color = function() {
     return color;
 }
 
+//随机角度
+rdm.angle = function() {
+    return `${rdm.N(0, 360)}deg`;
+}
+
+
+
 class inlineCode{
     
     testEnvironment(){
